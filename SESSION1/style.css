@@ -1,0 +1,793 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* general */
+
+html{
+    
+    font-family: sans-serif;
+    
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------*/
+/* font */
+
+@font-face {
+    font-family: Mulish-Light;
+    src: url(.c:\Users\Dell\Desktop\Aml\DEPI\SESSION1\font\mulish\Mulish-Bold.ttf);
+}
+
+@font-face {
+    font-family: Mulish-Regular;
+    src: url(c:\Users\Dell\Desktop\Aml\DEPI\SESSION1\font\mulish\Mulish-Light.ttf);
+}
+
+@font-face {
+    font-family: Mulish-Medium;
+    src: url(c:\Users\Dell\Desktop\Aml\DEPI\SESSION1\font\mulish\Mulish-Medium.ttf);
+}
+
+@font-face {
+    font-family: Mulish-Bold;
+    src: url(c:\Users\Dell\Desktop\Aml\DEPI\SESSION1\font\mulish\Mulish-Regular.ttf);
+}
+
+
+
+
+/*-----------------------------------------------------------------------------------------------------------------*/
+/* header */
+
+.container{
+
+    width: 80%;
+    margin-inline: auto;
+    padding-block: 64px;
+    
+}
+
+.container .nav-bar{
+    list-style-type: none;
+    font-size: 18px;
+    float: right;
+    
+}
+
+.nav-bar .nav-link{
+    display: inline;
+    margin-left: 36px;
+    
+}
+
+.nav-bar a{
+    color: black;
+    opacity: 0.5;
+}
+
+
+.nav-bar .nav-link .active{
+    font-weight: 700;
+    opacity: 1;
+} 
+   
+
+
+.header{
+    display: table;
+}
+
+
+.header .header-text, .header .header-image{
+    display: table-cell;
+    
+}
+
+.header-text{
+    width: 35%;
+    vertical-align: middle;
+    margin-bottom: 16px;
+}
+
+.header-image{
+    width: 75%;
+    margin-inline-start: auto;
+}
+
+.header-text h1{
+    font-size: 48px;
+    line-height: 56px;
+    margin: 32px 0 ;
+}
+
+.header-text p{
+    font-size: 21px;
+    line-height: 32px;
+    color: #7D7987;
+    margin-bottom: 32px;
+    
+}
+
+ 
+
+main{         
+    position: relative;
+
+}
+
+.background{
+    position: absolute;
+    left: 0px;
+    top: 30%;
+}
+
+.button{
+    display: inline-block;
+    width: 200px;
+    border-radius: 55px;
+    border-color:  #458FF6;  
+    color: #458FF6;
+    background-color: white;
+    padding-block: 18px;
+    text-align: center;
+    font-size: 18px;
+
+    
+}
+
+.primary-button{
+    background-color: #458FF6;
+    color: white;
+    text-align: center;
+}
+
+
+/*-----------------------------------------------------------------------------------------------------------------*/
+/*our services*/
+
+.main-text{
+    text-align: center;
+    margin-top: 16px;
+    
+}
+
+.main-text .line1{
+    position: relative;
+}
+
+.main-text .line1::after{
+    content: '';
+    display: inline-block;
+    background-color: black;
+    position: absolute;
+    bottom: -15px;
+    width: 38px;
+    height: 2px;
+    border-radius: 5px;
+    left: 740px;
+}
+
+
+.main-text h1{
+    font-weight: Mulish-Bold;
+    
+font-size: 36px;
+line-height: 56px;
+
+
+}
+
+.main-text h4{
+    padding-block: 32px;
+    color: #7D7987;
+    font-family: Mulish-Light;
+    font-size: 18px;
+    font-weight: 300;
+    width: 60%;
+    margin-inline: auto;
+    
+}
+
+
+/*-----------------------------------------------------------------------------------------------------------------*/
+/* services cards */
+
+
+.cards{
+    width: 75%;
+    margin-inline: auto;
+}
+
+.services{
+    
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px;
+    padding: 20px;
+    
+}
+
+.card{
+    width: calc(100% / 3 - 3 * 2 * 5px);
+    border-radius: 20px;
+    margin: 15px;
+    height: 334px;
+    top: 1224px;
+    left: 624px;
+    box-shadow: 10px 40px 50px 0px #E5E9F666;
+    background-color: white;
+}
+
+.single-card{
+    margin: 30px 20px 30px 20px;
+}
+
+.card-img{
+    margin-bottom: 10px;
+}
+
+.services-text{
+    width: 89%;
+}
+.card h3{
+
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 56px;
+    text-align: left;
+}
+
+.card p{
+    
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28px;
+    text-align: left;
+    color: #7D7987;
+    width: 90%;
+    margin-bottom: 20px;
+}
+
+.cards-button{
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 120px;
+}
+
+.six-cards{
+    position: relative;
+    
+    
+}
+
+.background2{
+    position: absolute;
+    top: 53%;
+    transform: translateY(-53%);
+    right: 12%;
+    z-index: -1;
+}
+
+.six-cards-background{
+    position: absolute;
+    width: 900px;
+    height: 600px;
+    top: 15%;
+    left: -6%;
+
+}
+
+/*-----------------------------------------------------------------------------------------------------------------*/
+/* body one */
+
+.body-one{
+    display: table;
+    padding-block: 32px;
+    width: 80%;
+    margin-inline: 135px;
+    margin-bottom: 128px;
+}
+.body-one .line2{
+    position: relative;
+}
+
+.body-one .line2::after{
+    content: '';
+    background-color: #1F1534;
+    width: 56px;
+    height: 2px;
+    display: inline-block;
+    border-radius: 10px ;
+    position: absolute;
+    bottom: -15px;
+    left: 0px;
+}
+
+.body-one .img1, .body-one .text1{
+    display: table-cell;
+}
+
+.text1{
+    width: 35%;
+    vertical-align: middle;
+    
+    
+}
+
+.text1 h3{
+    font-size: 36px;
+    font-family: 700px;
+    font-weight: 700;
+    line-height: 56px;
+    text-align: left;
+    margin-bottom: 32px;
+}
+
+.text1 p{
+    font-family: Mulish-Medium;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 30px;
+    text-align: left;   
+    color: #7D7987;
+    margin-bottom: 32px;
+    max-width: 85%;
+
+}
+
+.img1{
+    width: 75%;
+    
+    
+}
+
+/*-----------------------------------------------------------------------------------------------------------------*/
+/* body two*/
+
+.body-two{
+    display: table;
+    padding-block: 32px;
+    width: 80%;
+    margin-inline: 280px;
+    margin-bottom: 128px;
+    position: relative;
+}
+
+.body-two .img2, .body-two .text2{
+    display: table-cell;
+}
+
+
+.body-two .line3{
+    position: relative;
+}
+
+.body-two .line3::after{
+    content: '';
+    background-color: #1F1534;
+    width: 56px;
+    height: 2px;
+    display: inline-block;
+    border-radius: 10px ;
+    position: absolute;
+    bottom: 8px;  /* it doesn't work with negative */
+    left: 0px;
+}
+
+.text2{
+    width: 35%;
+    vertical-align: middle;
+    
+}
+
+.text2 h3{
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 56px;
+    text-align: left;
+    max-width: 65%;
+    padding-bottom: 32px;
+}
+
+.text2 p{
+    font-family: Muli;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 30px;
+    text-align: left;   
+    color: #7D7987;
+    margin-bottom: 32px;
+    max-width: 90%;
+
+}
+
+
+.img2{
+    width: 75%;
+    margin-inline: 100px;
+    
+}
+
+.body-background{
+    position: absolute;
+    right: 0;
+    top: -37%;
+
+}
+
+
+/*-----------------------------------------------------------------------------------------------------------------*/
+/* rectangle */
+
+
+.rect{
+    background-color: #458FF6;
+    height: 425px;
+    margin-bottom: 18%;
+    border-radius: 24px ;
+    margin-inline: auto;
+    color: white;
+    position: relative;
+
+}
+
+#color{
+    background-image: linear-gradient(#67C3F3,#5A98F2);
+}
+
+.rect .title{
+
+    text-align: center;
+    padding-top: 64px;
+    font-size: 32px ;
+}
+
+.rect .title{
+    position: relative;
+}
+
+.rect .title::after{
+    position: absolute;
+    content: '';
+    background-color: white;
+    width: 56px;
+    height: 2px;
+    display: inline-block;
+    border-radius: 10px ;
+    bottom: -27px;  
+    left: 47%;
+
+}
+
+.all{
+    display: flex;
+    width: 80%;
+    margin-inline: auto;
+    margin-top: 64px;
+}
+
+.rect-img{
+    
+    padding-top: 42px;
+   
+}
+
+.image{
+    width: auto;
+    height: auto;
+    border-radius: 50%;
+    border: 4px solid white; 
+}
+
+.one{                     
+    width:50%;
+    padding: 30px;
+    padding-top: 64px;
+    
+}
+
+.one h4{
+    
+    font-size: 22px;
+    font-weight: Mulish-Bold;
+    line-height: 48px;
+    text-align: left;
+
+}
+
+.one h5{
+    font-size: 18px;
+    font-weight: Mulish-light;
+    line-height: 48px;
+    text-align: left;
+    color: #FFFFFFD9 ;
+
+}
+
+.two{
+    width: 50%;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+    padding-top: 42px;
+
+}
+
+.rect-background1{
+    position: absolute;
+    right: -50px;
+    top: -12px;
+}
+
+.container{
+    position: relative;
+}
+
+.rect-background2{
+    position: absolute;
+    left: -4%;
+    top: 41%;
+}
+
+.arrow{
+    position: absolute;
+    left: 36%;
+    top: 68%;
+}
+
+
+
+/*-----------------------------------------------------------------------------------------------------------------*/
+/* articles */
+
+
+.article-title{
+    
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 56px;
+    text-align: center;
+    position: relative;
+    margin-bottom: 50px;
+    
+}
+
+.article-title::after{
+    position: absolute;
+    content: '';
+    background-color: #1F1534;
+    width: 56px;
+    height: 2px;
+    border-radius: 5px;
+    bottom: -10px;
+    left: 48%;
+    
+}
+
+
+.articles{
+    display: flex;
+    width: 80%;
+    top: 4427px;
+    left: 191px;
+    margin-inline: auto;
+    padding: 10px;
+   
+    
+
+}
+
+.articles{
+    background-image: url(c:\Users\Dell\Desktop\Aml\DEPI\SESSION1\element.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+.article{
+    margin: 15px;
+    border-radius: 20px;
+    box-shadow: 10px 40px 50px 0px #E5E9F666;
+    background-color: white;
+    position: relative;
+}
+
+.article-img{
+    width: 100%;
+}
+
+
+.article-text{
+    padding: 20px;
+    width: 70%;
+}
+
+.article-text h3{
+    
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 32px;
+    text-align: left;
+    
+
+}
+
+.article-text p{
+    
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28px;
+    text-align: left;  
+    color: #7D7987;
+    margin: 10px;
+}
+
+.article-button{
+    color: #458FF6;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 28px;
+    text-align: left;
+
+}
+
+.articles-button{
+    display: block;
+    margin: auto;
+    margin-top: 42px;
+    margin-bottom: 160px;
+    
+}
+
+.articles-background1{
+    position: absolute;
+    right: 0;
+    top: 544%;
+    width: 502px;
+    z-index: -2;
+}
+
+.articles-background2{
+    position: absolute;
+    z-index: -1;
+    top: 560%;
+    left: 8%;
+}
+
+.articles-background3{
+    position: absolute;
+    right: 5%;
+    top: 666%;
+    z-index: -1;
+}
+
+
+
+/*-----------------------------------------------------------------------------------------------------------------*/
+/* footer */
+
+footer{
+    background-color: #458FF6;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    color: white;
+}
+
+.footer-container{
+    display: table;
+    width: 80%;
+    margin-inline: auto;
+    padding-block: 100px;
+    
+}
+
+footer .company , footer .region ,footer .help, footer .text{
+    display: table-cell;
+    
+}
+
+
+.logo-combo{
+    display: flex;
+
+}
+.logo-img{
+    border-radius: 50%;  /*  logo icon error ************************************************************************/
+}
+
+.logo-text{           
+
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30.12px;
+    text-align: left;
+    padding-block: 6px;
+    padding-inline: 48px;
+
+} 
+
+
+.company-link, .region-link, .help-link{
+    list-style-type: none;
+    margin-block: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+
+.text ,.company-link, .region-link, .help-link{
+
+    margin-inline-end: 120px;               /* error margin of text *********************************************************/
+
+}
+
+
+.company{
+    padding-inline: 32px;
+    
+    
+        
+}
+
+.region{
+    padding-inline: 32px;
+ 
+}
+
+.help{
+    padding-inline: 16px;
+    
+}
+
+.text{
+    padding-inline: 32px;
+    width: 30%;
+    
+
+}
+
+.text p{
+    margin-top: 12px;
+}
+
+.text p{
+    margin: 16px 0 32px 0;
+    
+}
+
+.word{
+    margin-block-end: 3px;
+}
+
+.footer-background{
+    position: absolute;
+    bottom: 6px;
+    left: 6px;
+}
+
+.logo-icon{
+    position: absolute;
+
+
+}
+
+.logo-icon2{
+    position: absolute;
+    top: 29.3%;
+    left: 12.95%;
+}
